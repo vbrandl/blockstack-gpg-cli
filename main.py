@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
 import os
+import sys
 
 import blockstack_client
 from blockstack_client import get_logger, get_config
@@ -58,5 +59,5 @@ def gpg_list_profile_keys( name, proxy=None, wallet_keys=None, config_dir=None )
 
     return ret
 
-print gpg_list_profile_keys("vsund.id")
+print gpg_list_profile_keys(sys.argv[1])
 #  vim: set filetype=python ts=8 sw=4 tw=120 et :
