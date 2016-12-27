@@ -6,10 +6,6 @@ import sys
 import blockstack_gpg
 from blockstack_gpg import gpg_list_profile_keys
 
-BEGIN_BLOCK = '-----BEGIN PGP PUBLIC KEY BLOCK-----'
-END_BLOCK = '-----END PGP PUBLIC KEY BLOCK-----'
-
-
 
 gpg_keys = gpg_list_profile_keys(sys.argv[1])
 
