@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 exec(open('blockstack_gpg_cli/version.py').read())
 
 setup(
-	name='blockstacl-gpg-cli',
+	name='blockstack-gpg-cli',
 	version=__version__,
 	url='https://github.com/vbrandl/blockstack-gpg-cli',
 	license='GPLv3',
