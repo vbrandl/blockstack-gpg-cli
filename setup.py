@@ -14,9 +14,9 @@ setup(
 	author_email='vbrandl <AT> riseup <DOT> net',
 	description='Download and verify GPG keys from blockstack',
 	packages=find_packages(),
+	dependency_links = ['https://github.com/vsund/blockstack-gpg/tarball/master#egg=blockstack-gpg-0.14.1'],
 	install_requires=[
-		'blockstack-client>=0.14.0',
-		'python-gnupg>=0.3.9'
+		'blockstack-gpg>=0.14.1'
 	],
 )
 #  vim: set filetype=python ts=4 sw=4 tw=120 noet :
